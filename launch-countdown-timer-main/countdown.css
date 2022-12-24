@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+:root {
+    /* ### Primary */
+
+    --Grayishblue: hsl(237, 18%, 59%);
+    --Softred: hsl(345, 95%, 68%);
+
+    /* ### Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Darkdesaturatedblue: hsl(236, 21%, 26%);
+    --Verydarkblue: hsl(235, 16%, 14%);
+    --Verydark /* (mostly black)blue */: hsl(234, 17%, 12%);
+
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+html, body {
+    height: 100vh;
+}
+html {
+    font-family: 'Red Hat Text', sans-serif;
+    background-image: url(images/bg-stars\ -\ Copy.svg), linear-gradient(#1A1823,#211A29, #2F2439);
+    
+    /* background-image:  */
+}
+
+body {
+    max-height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(images/pattern-hills.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+          
+.container {                 
+    gap: 40px;
+    display: flex;
+    align-items: center;
+}
+                               
+.countdown {
+    position: relative;
+    text-align: center;
+    bottom: 50%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    position: absolute;
+    bottom: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: var(--White);
+    font-weight: 100;
+}
+    
+.remaining {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #333;
+    font-size: 100px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: hsl(235, 23%, 21%);
+    color: hsl(345, 62%, 55%);
+    border: none;
+    background-image: radial-gradient(circle at left, var(--Verydark) 5px, transparent 6px), radial-gradient(circle at right, var(--Verydark) 5px, transparent 6px);
+}
+
+.middle {
+    position: absolute;
+    width: 200px;
+    background-color: hsl(238, 20%, 25%);
+    bottom: 0px;
+    height: 100px;
+    overflow: hidden;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-image: radial-gradient(circle at top left, var(--Verydark) 5px, transparent 6px), radial-gradient(circle at top right, var(--Verydark) 5px, transparent 6px);
+}
+
+.remaining_bottom {
+    background: var(--Verydark);
+    height: 100px;
+    width: 200px;
+    border-radius: 8px;
+    position: absolute;
+    top: 110px;
+    z-index: -1;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+    display: inline-block;
+}
+                    
+span {
+    position: absolute;
+    top: calc(100% + 30px);
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 18px;
+    letter-spacing: 5px;
+    color: var(--Grayishblue);
+}
+
+footer {
+    display: flex;
+    
+}
+
+.social_media {
+    display: flex;
+    gap: 40px;
+    position: absolute;
+    right: 50%;
+    bottom: 10%;
+    transform: translate(50%);
+}
+
+.middle p {
+    position: relative;
+    bottom: 70px;
+    overflow: hidden;
+    font-size: 100px;
+    color: var(--Softred);
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+    color: var(--White);
+    position: absolute;
+    right: 50%;
+    bottom: 5%;
+    transform: translate(50%);
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.attribution a {
+    color: var(--Softred);
+    text-decoration: none;
+}

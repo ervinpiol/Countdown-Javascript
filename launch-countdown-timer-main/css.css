@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap');
+:root {
+    /* ### Primary */
+
+    --Grayishblue: hsl(237, 18%, 59%);
+    --Softred: hsl(345, 95%, 68%);
+
+    /* ### Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Darkdesaturatedblue: hsl(236, 21%, 26%);
+    --Verydarkblue: hsl(235, 16%, 14%);
+    --Verydark /* (mostly black)blue */: hsl(234, 17%, 12%);
+
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    /* border: 1px solid red; */
+}
+html, body {
+    height: 100vh;
+}
+html {
+    font-family: 'Red Hat Text', sans-serif;
+    background: var(--Verydarkblue);
+}
+body {
+    max-width: 1300px;
+    max-height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remaining {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #333;
+}              
+              
+.container {                 
+    gap: 40px;
+    display: flex;
+    align-items: center;
+}
+                    
+.div {
+    position: relative;
+    text-align: center;
+}
+                    
+.remaining.days {
+    display: inline-block;
+}
+                    
+span {
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 50%;
+    transform: translate(-50%, 0);
+}

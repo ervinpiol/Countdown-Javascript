@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="countdown.css" />
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>WE'RE LAUNCING SOON</h1>
+      <div class="countdown">
+        <div class="remaining days"></div>
+        <div class="middle">
+          <p class="days"></p>
+        </div>
+        <div class="remaining_bottom"></div>
+        <span>DAYS</span>
+      </div>
+      <div class="countdown">
+        <div class="remaining hours"></div>
+        <div class="middle">
+          <p class="hours"></p>
+        </div>
+        <div class="remaining_bottom"></div>
+        <span>HOURS</span>
+      </div>
+      <div class="countdown">
+        <div class="remaining minutes"></div>
+        <div class="middle">
+          <p class="minutes"></p>
+        </div>
+        <div class="remaining_bottom"></div>
+        <span>MINUTES</span>
+      </div>
+      <div class="countdown">
+        <div class="remaining seconds"></div>
+        <div class="middle">
+          <p class="seconds"></p>
+        </div>
+        <div class="remaining_bottom"></div>
+        <span>SECONDS</span>
+      </div>
+    </div>
+    <footer>
+      <!-- <img class="footer_background" src="images/pattern-hills.svg" alt="" /> -->
+      <div class="social_media">
+        <div>
+          <a href="https://facebook.com/" target="_blank"
+            ><img
+              src="images/icon-facebook.svg"
+              onmouseover="hoverImage(this, 'fb')"
+              onmouseout="hoverOutImage(this, 'fb')"
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.pinterest.ph/" target="_blank"
+            ><img
+              src="images/icon-pinterest.svg"
+              onmouseover="hoverImage(this, 'ptr')"
+              onmouseout="hoverOutImage(this, 'ptr')"
+          /></a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com" target="_blank"
+            ><img
+              src="images/icon-instagram.svg"
+              onmouseover="hoverImage(this, 'ig')"
+              onmouseout="hoverOutImage(this, 'ig')"
+          /></a>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a target="_blank" href="https://github.com/ervinpiol"
+          >Ervin Vince D. Piol</a
+        >.
+      </div>
+    </footer>
+    <script src="countdown.js"></script>
+  </body>
+</html>
